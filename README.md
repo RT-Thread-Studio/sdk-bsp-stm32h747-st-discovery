@@ -1,0 +1,1 @@
+# sdk-bsp-stm32h747-st-discovery
