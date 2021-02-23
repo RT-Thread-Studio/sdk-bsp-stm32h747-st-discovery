@@ -1,0 +1,102 @@
+board:
+  buy_url_cn: https://www.st.com/content/st_com/zh/products/evaluation-tools/product-evaluation-tools/mcu-mpu-eval-tools/stm32-mcu-mpu-eval-tools/stm32-discovery-kits/stm32h747i-disco.html#sample-buy
+  buy_url_global: https://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-mpu-eval-tools/stm32-mcu-mpu-eval-tools/stm32-discovery-kits/stm32h747i-disco.html#sample-buy
+  debug_interface: SWD
+  debugger: ST-LINK
+  description_en: The STM32H747I-DISCO Discovery kit is a complete demonstration and
+    development platform for STMicroelectronics STM32H747XIH6 microcontroller, designed
+    to simplify user application development. STM32H747I-DISCO board photoSTM32H747I-DISC1
+    is the subset of STM32H747I-DISCO without the LCD display module.
+  description_zh: STM32H747I-DISCO 是 ST 推出的一款基于 ARM Cortex-M7 内核的开发板，最高主频为 480Mhz，该开发板具有丰富的板载资源，可以充分发挥
+    STM32H747 的芯片性能。
+  emulator_machine: ''
+  large_image: documents/images/board.png
+  name: STM32H747-ST-DISCOVERY
+  price_cn: 1289 CNY
+  price_global: 199.41 USD
+  sale_contact_cn: https://www.st.com/content/st_com/zh/products/evaluation-tools/product-evaluation-tools/mcu-mpu-eval-tools/stm32-mcu-mpu-eval-tools/stm32-discovery-kits/stm32h747i-disco.html
+  sale_contact_global: https://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-mpu-eval-tools/stm32-mcu-mpu-eval-tools/stm32-discovery-kits/stm32h747i-disco.html
+  small_image: documents/images/board_small.png
+  vendor: STMicroelectronics
+  version: 1.0.0
+chip:
+  chip_name: STM32H747XI
+  clock_source: HSE
+  device_vendor: STMicroelectronics
+  family_name: STM32
+  rx_name: PA10
+  series_name: STM32H7
+  source_freq: '8000000'
+  sub_series_name: STM32H747
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: manual
+  file: documents/dm00504240-discovery-kit-with-stm32h747xi-mcu-stmicroelectronics.pdf
+  title: dm00504240-discovery-kit-with-stm32h747xi-mcu-stmicroelectronics
+example_projects: []
+features:
+- 'MCU: STM32H747, main frequency 480MHz, 2MB Flash, 1MB RAM'
+- 'Common interfaces: USB to serial port, Ethernet interface, Arduino interface, etc'
+- Debugging interface:standard JTAG/SWD
+features_zh:
+- MCU：STM32H747，主频 480MHz，2MB FLASH ，1MB RAM
+- 常用接口：USB 转串口、以太网接口、arduino 接口等
+- 调试接口：标准 JTAG/SWD
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - makefile.targets
+    - project.ewp
+    - project.eww
+    - project.uvoptx
+    - project.uvprojx
+    - README.md
+    - README_zh.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - template.ewp
+    - template.eww
+    - template.uvoptx
+    - template.uvprojx
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: ''
+  project_name: stm32h747
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
